@@ -38,6 +38,38 @@
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
+    <table class="centeredTable">
+        <th:block th:each="job : ${jobs}">
+
+            <tr>
+                <th>Id</th>
+                <td th:text="${job.Id}"></td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td th:text="${job.name}"></td>
+            </tr>
+            <tr>
+                <th>Employer</th>
+                <td th:text="${job.employer}"></td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td th:text="${job.location}"></td>
+            </tr>
+            <tr>
+                <th>PositionType</th>
+                <td th:text="${job.positionType}"></td>
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <td th:text="${job.coreCompetency}"></td>
+
+            </tr>
+
+        </th:block>
+    </table>
+
 </div>
 
 </body>
